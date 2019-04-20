@@ -1,5 +1,5 @@
 // When running locally:
-// Change connect spotify button to "http://localhost:8888/login"
+// change connect-spotify button link to "http://localhost:8888/login"
 
 import React, { Component } from 'react';
 import './bootstrap.css';
