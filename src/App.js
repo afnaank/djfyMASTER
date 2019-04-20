@@ -1,5 +1,10 @@
-// When running locally:
-// change connect-spotify button link to "http://localhost:8888/login"
+/**
+ * DJFY app code built using React App
+ *
+ * When running locally,
+ * change connect-spotify button link to "http://localhost:8888/login"
+ *
+ */
 
 import React, { Component } from 'react';
 import './bootstrap.css';
@@ -66,25 +71,36 @@ class App extends Component {
             <div className="App">
                 <h1 class="cover-heading">DJFY</h1>
 
+                {/* Show account name and pic */}
                 <div>
                     Spotify Account: {this.state.spotifyAccount.accountName}
                 </div>
-
                 <div>
                     <img src={this.state.spotifyAccount.accountPic} style={{ height: 100 }}/>
                     <br /> <br />
                 </div>
 
-                <p class="lead">
-                    <a href="https://djfy-backend-server.herokuapp.com/login" class="btn btn-sm btn-secondary">CONNECT SPOTIFY</a>
-                </p>
-
+                {/* Show button to check spotify account */}
                 {
                     this.state.loggedIn &&
-                    <button onClick={() => this.getConnectedAccount()}>
+                    <button class="btn btn-sm btn-secondary" onClick={() => this.getConnectedAccount()}>
                         Check Account
                     </button>
                 }
+
+                {/* Connect & Join buttons */}
+                <br /> <br /> <br /> <br />
+                <p>
+                    Connect to Spotify &nbsp;
+                    <a href="https://djfy-backend-server.herokuapp.com/login" class="btn btn-lg btn-primary">Connect</a>
+
+                    &nbsp;&nbsp;&nbsp;&nbsp;{/* Adding space in between the two buttons */}
+
+                    Join Room &nbsp;
+                    <button class="btn btn-lg btn-secondary" onClick={() => this.joinRoom()}>Join</button>
+                </p>
+
+
             </div>
         );
     }
