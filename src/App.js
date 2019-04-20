@@ -73,7 +73,7 @@ class App extends Component {
                 </div>
 
                 <p class="lead">
-                    <a href=" https://djfy-backend-server.herokuapp.com" class="btn btn-sm btn-secondary">CONNECT SPOTIFY</a>
+                    <a href=" https://djfy-backend-server.herokuapp.com/login" class="btn btn-sm btn-secondary">CONNECT SPOTIFY</a>
                 </p>
 
                 {
