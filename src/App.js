@@ -316,7 +316,7 @@ class App extends Component {
                                     </button>
                                 }
                                 <p>Connect to Spotify &nbsp;</p>
-                                <a href="http://localhost:8888" class="btn btn-lg btn-secondary">Connect</a>
+                                <a href="https://djfy-backend-server.herokuapp.com/login" class="btn btn-lg btn-secondary">Connect</a>
                                 <form id="createroom">
                                     <p class="lead">
                                         <a>NAME PLAYLIST:</a>
