@@ -1,10 +1,6 @@
 ## DJFY
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-To run locally, change button link in /src/App.js to [http://localhost:3000](http://localhost:3000)
-
-Then run: npm start
-
 
 ## Available Scripts
 
